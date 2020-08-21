@@ -19,7 +19,7 @@ public class Persona {
     public Persona() {
     }
 
-    public Persona(String ID, String Nombre, int Edad, String Sexo, String EstadoCivil, double Altura, double Peso, ArrayList Mensajes) {
+    public Persona(String ID, String Nombre, int Edad, String Sexo, String EstadoCivil, double Altura, double Peso) {
         this.ID = ID;
         this.Nombre = Nombre;
         this.Edad = Edad;
@@ -86,17 +86,9 @@ public class Persona {
         this.Peso = Peso;
     }
 
-    public ArrayList getMensajes() {
-        return Mensajes;
-    }
-
-    public void setMensajes(ArrayList Mensajes) {
-        this.Mensajes = Mensajes;
-    }
-
     @Override
     public String toString() {
-        return "Persona{" + "ID=" + ID + ", Nombre=" + Nombre + ", Edad=" + Edad + ", Sexo=" + Sexo + ", EstadoCivil=" + EstadoCivil + ", Altura=" + Altura + ", Peso=" + Peso + ", Mensajes=" + Mensajes + '}';
+        return "Persona{" + "ID=" + ID + ", Nombre=" + Nombre + ", Edad=" + Edad + ", Sexo=" + Sexo + ", EstadoCivil=" + EstadoCivil + ", Altura=" + Altura + ", Peso=" + Peso + '}';
     }
     
 }

@@ -22,8 +22,8 @@ public class PersonaGeneral extends Persona {
         this.Sueldo = Sueldo;
     }
 
-    public PersonaGeneral(String Ocupacion, String Horario, int SemanaTrabajando, double Sueldo, String ID, String Nombre, int Edad, String Sexo, String EstadoCivil, double Altura, double Peso, ArrayList Mensajes) {
-        super(ID, Nombre, Edad, Sexo, EstadoCivil, Altura, Peso, Mensajes);
+    public PersonaGeneral(String Ocupacion, String Horario, int SemanaTrabajando, double Sueldo, String ID, String Nombre, int Edad, String Sexo, String EstadoCivil, double Altura, double Peso) {
+        super(ID, Nombre, Edad, Sexo, EstadoCivil, Altura, Peso);
         this.Ocupacion = Ocupacion;
         this.Horario = Horario;
         this.SemanaTrabajando = SemanaTrabajando;
