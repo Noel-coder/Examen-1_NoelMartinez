@@ -1122,28 +1122,37 @@ public class principal extends javax.swing.JFrame {
                 Comic c = (Comic) cb_articulos.getSelectedItem();
 
             Object[] newrow = {
-                c.getTitulo(),
                 c.getEstado(),
-                c.getDesc(),
-                c.getPuntuacion(),
+                c.getVolumen_desc(),
             };
             DefaultTableModel modelo = (DefaultTableModel) tabla1.getModel();
             modelo.addRow(newrow);
             tabla1.setModel(modelo);
             }
-            if (cb_personas.getSelectedItem() instanceof PersonaGeneral) {
-                PersonaGeneral s = (PersonaGeneral) cb_personas.getSelectedItem();
+            if (cb_personas.getSelectedItem() instanceof Juegos) {
+                Juegos s = (Juegos) cb_articulos.getSelectedItem();
 
             Object[] newrow = {
-                s.getNombre(),
-                s.getSexo(),
-                s.getOcupacion(),
-                s.getEstadoCivil(),
+                s.getCasaElaboracion(),
+                s.getEdicion(),
+                s.getPais(),
             };
             DefaultTableModel modelo = (DefaultTableModel) tabla1.getModel();
             modelo.addRow(newrow);
             tabla1.setModel(modelo);
             }
+            if (cb_personas.getSelectedItem() instanceof Figura) {
+                Figura s = (Figura) cb_articulos.getSelectedItem();
+
+            Object[] newrow = {
+                s.getDescFigura(),
+                s.getInstrucciones(),
+                s.getTiempoGarantia(),
+            };
+            DefaultTableModel modelo = (DefaultTableModel) tabla1.getModel();
+            modelo.addRow(newrow);
+            tabla1.setModel(modelo);
+        }
     }                                   
     }//GEN-LAST:event_cb_articulosItemStateChanged
 
